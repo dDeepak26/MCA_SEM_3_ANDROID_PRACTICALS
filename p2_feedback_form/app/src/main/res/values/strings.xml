@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">p2_feedback_form</string>
+    <string name="select_feedback_type">Select Feedback Type</string>
+    <string-array name="feedback_types">
+        <item>General</item>
+        <item>Technical Issue</item>
+        <item>Feature Request</item>
+    </string-array>
+</resources>

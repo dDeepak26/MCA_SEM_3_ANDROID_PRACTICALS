@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Feedback Type Spinner -->
+    <Spinner
+        android:id="@+id/spinnerFeedbackType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/feedback_types"
+        android:prompt="@string/select_feedback_type" />
+
+    <!-- AutoCompleteTextView for Subject -->
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject"
+        android:completionThreshold="1"
+        android:layout_marginTop="20dp" />
+
+    <!-- Multiline EditText for Feedback Message -->
+    <EditText
+        android:id="@+id/editTextFeedbackMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Feedback Message"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:gravity="top"
+        android:layout_marginTop="20dp"
+        />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="20dp" />
+
+    <!-- TextView to display feedback submission result -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="start"
+        android:text="Feedback Submission Result:"
+        android:visibility="gone" />
+
+</LinearLayout>
